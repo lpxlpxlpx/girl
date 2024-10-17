@@ -1,0 +1,193 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('tom.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 纪念日顶部头像和心电图布局 */
+.anniversary-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.heart-rate {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+}
+
+/* 标题样式 */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 毛玻璃效果和模块样式 */
+.countdown, .gallery, .anniversaries, .message-board {
+    background: rgba(255, 255, 255, 0.2); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* 计时模块样式 */
+#timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* 图片展示模块样式 */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.uploaded-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 纪念日模块样式 */
+.anniversaries {
+    display: flex;
+    flex-direction: column; /* 垂直布局 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+}
+
+.anniversaries input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* 文本居中 */
+}
+
+/* 按钮居中 */
+.anniversaries button {
+    padding: 10px 20px;
+    background-color: #00d9ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.anniversaries button:hover {
+    background-color: #218838;
+}
+
+.anniversaries ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.anniversaries li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 留言板模块样式 */
+.message-board {
+    display: flex;
+    flex-direction: column; /* 垂直布局 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+}
+
+.message-board textarea {
+    width: 70%; /* 宽度设置为70% */
+    height: 80px;
+    margin: 10px 0; /* 上下间距 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* 禁用调整大小 */
+    text-align: center; /* 输入文字居中 */
+}
+
+/* 提交按钮居中 */
+.message-board button {
+    padding: 10px 20px;
+    background-color: #00d9ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.message-board button:hover {
+    background-color: #0056b3;
+}
+
+/* 已发布的消息样式 */
+.message-board #messages {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+.message-board #messages div {
+    background-color: #e9ecef;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* 上传按钮 */
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

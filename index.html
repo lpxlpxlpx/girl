@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的小窝</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="anniversary-header">
+            <img src="lpx.jpg" alt="头像1" class="avatar">
+            <img src="xin.png" alt="心电图" class="heart-rate">
+            <img src="sy.jpg" alt="头像2" class="avatar">
+        </div>
+
+
+        <!-- 计时功能模块 -->
+        <div class="countdown">
+            <h2>孙燕和李鹏鑫已经在一起</h2>
+            <div id="timer">
+                <span id="days">00天</span>
+                <span id="hours">00小时</span>
+                <span id="minutes">00分钟</span>
+                <span id="seconds">00秒</span>
+            </div>
+        </div>
+
+        <!-- 图片展示模块 -->
+        <div class="gallery">
+            <h2>我们的回忆</h2>
+            <input type="file" id="image-upload" accept="image/*" multiple>
+            <div class="images" id="image-preview"></div>
+        </div>
+
+        <!-- 纪念日模块 -->
+        <div class="anniversaries">
+            
+            <input type="text" id="anniversary-input" placeholder="添加纪念日">
+            <button id="add-anniversary">添加纪念日</button>
+            <ul id="anniversary-list">
+                <li>2024年09月20日 - 我们在一起了</li>
+                <li>2003年07月01日 - 孙燕的生日</li>
+                <li>2003年01月16日 - 李鹏鑫的生日</li>
+            </ul>
+        </div>
+
+        <!-- 留言板模块 -->
+        <div class="message-board" id="message-board">
+            <h2>留言板</h2>
+            <div id="messages"></div>
+            <textarea id="message-input" placeholder="输入留言..."></textarea>
+            <button id="submit-message">提交留言</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
